@@ -8,3 +8,8 @@ jobs:
     steps:
       - name: Print a greeting
         run: echo "Hello from the robot!"
+      - name: Get my code onto this machine
+        uses: actions/checkout@v4
+      - name: Now I can see my files
+        run: ls -la
+
