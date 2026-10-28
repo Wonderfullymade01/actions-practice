@@ -18,5 +18,11 @@ jobs:
         run: echo "My key is $API_KEY"
         env:
           API_KEY: ${{ secrets.MY_API_KEY }}
+      - name: Look around
+        run: |
+          pwd
+          ls -la
+          env
+
 
 
